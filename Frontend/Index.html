@@ -1,0 +1,41 @@
+<!--
+Created by Aditya Gupta
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baggage Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Baggage Management System</h1>
+        
+        <div class="input-section">
+            <label for="baggage-id">Enter Baggage ID:</label>
+            <input type="text" id="baggage-id" placeholder="Baggage ID">
+            
+            <label for="baggage-status">Select Status:</label>
+            <select id="baggage-status">
+                <option value="Checked-in">Checked-in</option>
+                <option value="In-Transit">In-Transit</option>
+                <option value="Delivered">Delivered</option>
+            </select>
+
+            <button onclick="updateStatus()">Update Status</button>
+        </div>
+        
+        <div class="status-section">
+            <h2>Baggage Status:</h2>
+            <ul id="status-list">
+                <!-- Statuses will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
